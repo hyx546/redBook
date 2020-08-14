@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const mongoose = require('../db/config/mongoose');
-const db = mongoose();
-const User = require('../db/models/UserModel');// 引入模型
+// const mongoose1 = require('../db/config/mongoose');
+// const db = mongoose1();
+// const User = require('../db/models/UserModel');// 引入模型
 
 const app = express();
 // 给app配置bodyParser中间件
