@@ -7,7 +7,7 @@ const {
 
 module.exports = override(
   fixBabelImports("import", {
-      libraryName: "antd", libraryDirectory: "es", style: 'css' // change importing css to less
+      libraryName: "antd-mobile", libraryDirectory: "es", style: 'css' // change importing css to less
   }),
   // addLessLoader({
   //   javascriptEnabled: true,
@@ -15,3 +15,9 @@ module.exports = override(
   // })
 
 );
+
+// const { injectBabelPlugin } = require('react-app-rewired');
+// module.exports = function override(config, env) {
+//   config = injectBabelPlugin(['import', { libraryName: 'antd-mobile', style: 'css' }], config);
+//   return config;
+// }
