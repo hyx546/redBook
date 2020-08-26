@@ -1,11 +1,17 @@
 import React from 'react';
-import './App.css';
-import Router from './router';
 
-function App() {
+import Tabbar from './components/tabbar';
+
+const App = () => {
+
   return (
-    <Router />
+    <div>
+      <Tabbar></Tabbar>
+    </div>
   );
-}
+};
+
+
+
 
 export default App;
