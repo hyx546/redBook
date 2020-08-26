@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+
 import { TabBar } from 'antd-mobile';
 
-import {Icon} from '../../Icon';
+import { Icon } from '../../Icon';
 import Home from '../../pages/home';
+import Market from '../../pages/market';
 
 const Tabbar = () => {
-  const [selectedTab,setSelectedTab]=useState('home');
+  const [selectedTab,setSelectedTab]=useState('market');
   return (
     <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 } }>
         <TabBar
@@ -38,7 +40,7 @@ const Tabbar = () => {
             icon={<div/>}
             selectedIcon={<div/>}
           >
-            商城
+            <Market />
           </TabBar.Item>
           <Icon type="icon-jia"/>
           <TabBar.Item
